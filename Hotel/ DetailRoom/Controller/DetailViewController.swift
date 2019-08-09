@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class DetailViewController: UIViewController {
     
     
@@ -38,25 +37,8 @@ class DetailViewController: UIViewController {
         } else {
             pageControll.numberOfPages = room?.image?.count ?? 0
         }
+        
+        categoryRoomLabel.text = room?.roomCategory.rawValue
     }
 }
 
-extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(room?.image?.count)
-        return room?.image?.count ?? 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let item = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? DetailCell {
-            item.setupItem(image: room?.image?[indexPath.item])
-            return item
-        }
-        return UICollectionViewCell()
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let page = scrollView.contentOffset.x/scrollView.frame.width
-        pageControll.currentPage = Int(page)
-    }
-}

@@ -10,6 +10,7 @@ import UIKit
 
 class RoomCell: UITableViewCell {
     
+    @IBOutlet weak var priceRoomLabel: UILabel!
     @IBOutlet weak var roomCategoryLabel: UILabel!
     @IBOutlet weak var nameRoomLabel: UILabel!
     @IBOutlet weak var freeRoomLabel: UILabel!
@@ -18,6 +19,7 @@ class RoomCell: UITableViewCell {
         roomCategoryLabel.textColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1)
         roomCategoryLabel.text = room.roomCategory.rawValue
         nameRoomLabel.text = "№"+room.roomNumber
+        priceRoomLabel.text = room.roomPrice+"₴"
         if room.roomIsFree {
             freeRoomLabel.textColor = UIColor(red: 0.1, green: 1, blue: 0.2, alpha: 1)
             freeRoomLabel.text = "free"
