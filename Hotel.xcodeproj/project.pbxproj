@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA22901F2302D1B000114A48 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22901E2302D1AF00114A48 /* Order.swift */; };
+		EA229021230432DB00114A48 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA229020230432DB00114A48 /* User.swift */; };
+		EA2290272304512300114A48 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2290262304512300114A48 /* RegistrationViewController.swift */; };
+		EA22902A23058C7C00114A48 /* ExtensionAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22902923058C7B00114A48 /* ExtensionAuthVC.swift */; };
+		EA22902C23058CD800114A48 /* ExtensionUIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22902B23058CD800114A48 /* ExtensionUIAlert.swift */; };
 		EA34E60822F0440D009251FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34E60722F0440D009251FF /* AppDelegate.swift */; };
 		EA34E60D22F0440D009251FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA34E60B22F0440D009251FF /* Main.storyboard */; };
 		EA34E61022F0440D009251FF /* Hotel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA34E60E22F0440D009251FF /* Hotel.xcdatamodeld */; };
@@ -19,6 +24,7 @@
 		EA8D5A5D22FB2E1E004EFD26 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D5A5C22FB2E1E004EFD26 /* DetailCell.swift */; };
 		EA9715DD22FD54D7000F1C7F /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9715DC22FD54D7000F1C7F /* CollectionView.swift */; };
 		EA9715E322FD8758000F1C7F /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9715E222FD8758000F1C7F /* OrderViewController.swift */; };
+		EA9715E922FDE1EE000F1C7F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9715E822FDE1EE000F1C7F /* AuthViewController.swift */; };
 		EAA4E97422F5B3C200907BE0 /* ListHotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4E97322F5B3C200907BE0 /* ListHotelsViewController.swift */; };
 		EAA4E97622F5B5C100907BE0 /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4E97522F5B5C100907BE0 /* HotelCell.swift */; };
 		EAA4E97A22F5DEBA00907BE0 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4E97922F5DEBA00907BE0 /* RoomViewController.swift */; };
@@ -26,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA22901E2302D1AF00114A48 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		EA229020230432DB00114A48 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EA2290262304512300114A48 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		EA22902923058C7B00114A48 /* ExtensionAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAuthVC.swift; sourceTree = "<group>"; };
+		EA22902B23058CD800114A48 /* ExtensionUIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIAlert.swift; sourceTree = "<group>"; };
 		EA34E60422F0440C009251FF /* Hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA34E60722F0440D009251FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA34E60C22F0440D009251FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +51,7 @@
 		EA8D5A5C22FB2E1E004EFD26 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		EA9715DC22FD54D7000F1C7F /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		EA9715E222FD8758000F1C7F /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		EA9715E822FDE1EE000F1C7F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		EAA4E97322F5B3C200907BE0 /* ListHotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHotelsViewController.swift; sourceTree = "<group>"; };
 		EAA4E97522F5B5C100907BE0 /* HotelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCell.swift; sourceTree = "<group>"; };
 		EAA4E97922F5DEBA00907BE0 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +69,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA2290222304508200114A48 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				EA229025230450D900114A48 /* Model */,
+				EA229024230450D000114A48 /* View */,
+				EA229023230450BA00114A48 /* Controller */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		EA229023230450BA00114A48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA2290262304512300114A48 /* RegistrationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA229024230450D000114A48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA229025230450D900114A48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA229020230432DB00114A48 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA22902823058C3000114A48 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA22902923058C7B00114A48 /* ExtensionAuthVC.swift */,
+				EA22902B23058CD800114A48 /* ExtensionUIAlert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EA34E5FB22F0440C009251FF = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				EA34E61F22F0499C009251FF /* Application */,
+				EA9715E422FDC059000F1C7F /* Authorization */,
+				EA2290222304508200114A48 /* Registration */,
 				EA34E61C22F048FB009251FF /* ListHotels */,
 				EA34E61E22F0495C009251FF /* Room */,
 				EA34E61D22F0492F009251FF /*  DetailRoom */,
@@ -261,6 +317,40 @@
 		EA9715E122FD86F0000F1C7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA22901E2302D1AF00114A48 /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA9715E422FDC059000F1C7F /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				EA9715E722FDC09F000F1C7F /* Model */,
+				EA9715E622FDC096000F1C7F /* View */,
+				EA9715E522FDC082000F1C7F /* Controller */,
+				EA22902823058C3000114A48 /* Extension */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		EA9715E522FDC082000F1C7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA9715E822FDE1EE000F1C7F /* AuthViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA9715E622FDC096000F1C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA9715E722FDC09F000F1C7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,8 +433,14 @@
 				EAA4E97A22F5DEBA00907BE0 /* RoomViewController.swift in Sources */,
 				EA34E60822F0440D009251FF /* AppDelegate.swift in Sources */,
 				EA34E62E22F0DFF1009251FF /* ResponseAndParse.swift in Sources */,
+				EA22901F2302D1B000114A48 /* Order.swift in Sources */,
 				EA8D5A5D22FB2E1E004EFD26 /* DetailCell.swift in Sources */,
+				EA22902C23058CD800114A48 /* ExtensionUIAlert.swift in Sources */,
+				EA22902A23058C7C00114A48 /* ExtensionAuthVC.swift in Sources */,
+				EA229021230432DB00114A48 /* User.swift in Sources */,
 				EA34E61022F0440D009251FF /* Hotel.xcdatamodeld in Sources */,
+				EA2290272304512300114A48 /* RegistrationViewController.swift in Sources */,
+				EA9715E922FDE1EE000F1C7F /* AuthViewController.swift in Sources */,
 				EAA4E97C22F5E0CC00907BE0 /* RoomCell.swift in Sources */,
 				EA9715DD22FD54D7000F1C7F /* CollectionView.swift in Sources */,
 				EAA4E97422F5B3C200907BE0 /* ListHotelsViewController.swift in Sources */,

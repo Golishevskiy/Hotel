@@ -44,6 +44,7 @@ class RoomViewController: UITableViewController {
             if let detailVC = segue.destination as? DetailViewController {
                 guard let index = tableView.indexPathForSelectedRow?.row else { return }
                 detailVC.room = hotel?.rooms[index]
+                detailVC.hotelName = hotel?.hotelName
             }
         }
     }

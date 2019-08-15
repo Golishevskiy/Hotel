@@ -10,15 +10,17 @@ import UIKit
 class DetailViewController: UIViewController {
     
     
+    @IBOutlet weak var reserveButton: UIButton!
     @IBOutlet weak var categoryRoomLabel: UILabel!
     @IBOutlet weak var descriptionRoomLabel: UILabel!
     @IBOutlet weak var pageControll: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     var room: Room?
+    var hotelName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.title = "№"+(room?.roomNumber.description)!
         
         collectionView.dataSource = self
@@ -39,6 +41,33 @@ class DetailViewController: UIViewController {
         }
         
         categoryRoomLabel.text = room?.roomCategory.rawValue
+    }
+    
+    @IBAction func reserveButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toOrderSegue", sender: Any?.self)
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toOrderSegue" {
+            if let orderVC = segue.destination as? OrderViewController {
+                orderVC.room = room
+                orderVC.hotelName = hotelName
+            }
+        }
+    }
+}
+
+extension DetailViewController {
+    func checkMoney(money: Int, priceRoom: String) {
+        let roomPrice = Int(priceRoom) ?? 0
+        if money >= roomPrice {
+            
+        } else {
+            reserveButton.tintColor = UIColor(red: 0, green: 1, blue: 1, alpha: 1)
+            reserveButton.isEnabled = false
+        }
+        
     }
 }
 

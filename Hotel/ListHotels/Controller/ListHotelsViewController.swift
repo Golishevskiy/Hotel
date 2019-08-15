@@ -15,10 +15,17 @@ class ListHotelsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Out", style: .done, target: self, action: #selector(outUser))
+
         self.title = "Hotels"
         self.tableView.delegate = self
         self.tableView.dataSource = self
         model = parse.loadJson(filename: "document") ?? [Hotel]()
+    }
+    
+    @objc func outUser() {
+        UserDefaults.standard.set(false, forKey: "userLogin")
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,3 +54,5 @@ class ListHotelsViewController: UITableViewController {
         }
     } 
 }
+
+
