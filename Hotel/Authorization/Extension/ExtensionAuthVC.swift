@@ -14,6 +14,7 @@ extension AuthViewController {
     func authorisation(arrayUser: [User]) -> Bool {
         for user in arrayUser {
             if user.userName == (loginTextField.text ?? "") && user.userPassword == (passwordTextField.text ?? ""){
+                SessionUser.shared.saveUser(user: user)
                 return true
             } else {
                 continue

@@ -74,6 +74,9 @@
                     <navigationItem key="navigationItem" id="n4S-b7-9a0">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="f2W-TG-Y3h"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="eOC-10-uvf" kind="presentation" identifier="loginScreen" id="7yk-iw-l3J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mr-7e-Jan" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -608,6 +611,7 @@
                         <outlet property="moneyLabel" destination="G0B-T6-7cJ" id="xXY-2q-DI8"/>
                         <outlet property="nameLabel" destination="vzb-4W-fDZ" id="fHv-v2-Zth"/>
                         <outlet property="passwordLabel" destination="Ieg-lU-3mp" id="off-jp-HDo"/>
+                        <segue destination="uQ6-9l-TuT" kind="show" identifier="startScreen" id="Ij3-RJ-Yy4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eff-FU-DID" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -640,4 +644,7 @@
         <image name="money" width="409.60000610351562" height="409.60000610351562"/>
         <image name="sign-up" width="384" height="384"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ij3-RJ-Yy4"/>
+    </inferredMetricsTieBreakers>
 </document>

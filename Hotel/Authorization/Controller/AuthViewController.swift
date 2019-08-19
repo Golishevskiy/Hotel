@@ -20,11 +20,10 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //fake users
-        let petroUser = User(name: "petro", password: "1", balance: 1000)
+        let petroUser = User(name: "petro", password: "1", balance: 200)
         let ko = User(name: "ko", password: "10", balance: 1000)
         users.append(petroUser)
         users.append(ko)
-        
         settingButton()
     }
     

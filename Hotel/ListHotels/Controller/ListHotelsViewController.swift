@@ -25,6 +25,7 @@ class ListHotelsViewController: UITableViewController {
     
     @objc func outUser() {
         UserDefaults.standard.set(false, forKey: "userLogin")
+        performSegue(withIdentifier: "loginScreen", sender: nil)
         
     }
     

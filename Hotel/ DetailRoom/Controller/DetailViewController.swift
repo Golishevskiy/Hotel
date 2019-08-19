@@ -17,7 +17,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var room: Room?
     var hotelName: String!
-    
+    var user: User! = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +26,11 @@ class DetailViewController: UIViewController {
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        if SessionUser.shared.user != nil {
+            self.user = SessionUser.shared.user
+        }
+        
         
         if (room?.roomIsFree)! {
             descriptionRoomLabel.backgroundColor = .green
@@ -44,8 +50,11 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func reserveButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "toOrderSegue", sender: Any?.self)
+        checkMoney(user: user, priceRoom: (room?.roomPrice)!)
 
+        
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,16 +65,13 @@ class DetailViewController: UIViewController {
             }
         }
     }
-}
-
-extension DetailViewController {
-    func checkMoney(money: Int, priceRoom: String) {
+    
+    func checkMoney(user: User, priceRoom: String) {
         let roomPrice = Int(priceRoom) ?? 0
-        if money >= roomPrice {
-            
+        if user.balance >= roomPrice {
+            performSegue(withIdentifier: "toOrderSegue", sender: Any?.self)
         } else {
-            reserveButton.tintColor = UIColor(red: 0, green: 1, blue: 1, alpha: 1)
-            reserveButton.isEnabled = false
+            UIAlertController.alert(title: "Oops", msg: "Replenish your account", target: self)
         }
         
     }

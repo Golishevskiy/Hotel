@@ -16,19 +16,12 @@ class RegistrationViewController: UIViewController {
     
     var users: [User]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     @IBAction func registrationButton(_ sender: UIButton) {
         
         if userIsNew(users) {
             registrationNewUser()
         } else {
-            UIAlertController.alert(title: "WRONG NAME",
-                                    msg: "please enter a different name",
-                                    target: self)
+            alert(title: "WRONG NAME", msg: "please enter a different name")
         }
     }
     
@@ -69,9 +62,13 @@ class RegistrationViewController: UIViewController {
                            balance: Int(moneyLabel.text ?? "0") ?? 0)
         users.append(newUser)
         print(users.count)
+        if newUser != nil {
+            SessionUser.shared.saveUser(user: newUser)
+            self.performSegue(withIdentifier: "startScreen", sender: self)
+        }
     }
     
-    func alert(title: String, msg:String) {
+    func alert(title: String, msg: String) {
         UIAlertController.alert(title: title,
                                 msg: msg,
                                 target: self)

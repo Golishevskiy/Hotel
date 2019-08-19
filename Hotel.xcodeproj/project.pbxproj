@@ -20,6 +20,7 @@
 		EA34E62E22F0DFF1009251FF /* ResponseAndParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34E62D22F0DFF1009251FF /* ResponseAndParse.swift */; };
 		EA34E63222F1A19A009251FF /* HotelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34E63122F1A19A009251FF /* HotelModel.swift */; };
 		EA34E63422F32BD4009251FF /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = EA34E63322F32BD3009251FF /* document.json */; };
+		EA7710E4230AE018007815C0 /* SessionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7710E3230AE018007815C0 /* SessionUser.swift */; };
 		EA8D5A5B22FB28F9004EFD26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D5A5A22FB28F9004EFD26 /* DetailViewController.swift */; };
 		EA8D5A5D22FB2E1E004EFD26 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D5A5C22FB2E1E004EFD26 /* DetailCell.swift */; };
 		EA9715DD22FD54D7000F1C7F /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9715DC22FD54D7000F1C7F /* CollectionView.swift */; };
@@ -47,6 +48,7 @@
 		EA34E62D22F0DFF1009251FF /* ResponseAndParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAndParse.swift; sourceTree = "<group>"; };
 		EA34E63122F1A19A009251FF /* HotelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelModel.swift; sourceTree = "<group>"; };
 		EA34E63322F32BD3009251FF /* document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = document.json; path = ../../../../Downloads/document.json; sourceTree = "<group>"; };
+		EA7710E3230AE018007815C0 /* SessionUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUser.swift; sourceTree = "<group>"; };
 		EA8D5A5A22FB28F9004EFD26 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EA8D5A5C22FB2E1E004EFD26 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		EA9715DC22FD54D7000F1C7F /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		EA9715E722FDC09F000F1C7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA7710E3230AE018007815C0 /* SessionUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				EA22902C23058CD800114A48 /* ExtensionUIAlert.swift in Sources */,
 				EA22902A23058C7C00114A48 /* ExtensionAuthVC.swift in Sources */,
 				EA229021230432DB00114A48 /* User.swift in Sources */,
+				EA7710E4230AE018007815C0 /* SessionUser.swift in Sources */,
 				EA34E61022F0440D009251FF /* Hotel.xcdatamodeld in Sources */,
 				EA2290272304512300114A48 /* RegistrationViewController.swift in Sources */,
 				EA9715E922FDE1EE000F1C7F /* AuthViewController.swift in Sources */,
