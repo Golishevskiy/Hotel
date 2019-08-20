@@ -35,10 +35,6 @@ struct Room: Codable {
     let image: [String]?
 }
 
-//struct Image: Codable {
-//    let urlImages: [String]
-//}
-
 enum RoomCategory: String, Codable {
     case econom = "econom"
     case lux = "lux"

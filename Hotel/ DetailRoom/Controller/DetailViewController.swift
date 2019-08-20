@@ -9,7 +9,6 @@
 import UIKit
 class DetailViewController: UIViewController {
     
-    
     @IBOutlet weak var reserveButton: UIButton!
     @IBOutlet weak var categoryRoomLabel: UILabel!
     @IBOutlet weak var descriptionRoomLabel: UILabel!
@@ -18,10 +17,10 @@ class DetailViewController: UIViewController {
     var room: Room?
     var hotelName: String!
     var user: User! = nil
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.title = "№"+(room?.roomNumber.description)!
         
         collectionView.dataSource = self
@@ -30,7 +29,6 @@ class DetailViewController: UIViewController {
         if SessionUser.shared.user != nil {
             self.user = SessionUser.shared.user
         }
-        
         
         if (room?.roomIsFree)! {
             descriptionRoomLabel.backgroundColor = .green
@@ -45,16 +43,11 @@ class DetailViewController: UIViewController {
         } else {
             pageControll.numberOfPages = room?.image?.count ?? 0
         }
-        
         categoryRoomLabel.text = room?.roomCategory.rawValue
     }
     
     @IBAction func reserveButton(_ sender: UIButton) {
         checkMoney(user: user, priceRoom: (room?.roomPrice)!)
-
-        
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -73,7 +66,6 @@ class DetailViewController: UIViewController {
         } else {
             UIAlertController.alert(title: "Oops", msg: "Replenish your account", target: self)
         }
-        
     }
 }
 

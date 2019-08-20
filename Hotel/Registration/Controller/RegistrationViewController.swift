@@ -8,13 +8,21 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var moneyLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var registrationButtonOutlet: UIButton!
     
     var users: [User]!
+    
+    override func viewDidLoad() {
+        self.nameLabel.delegate = self
+        self.passwordLabel.delegate = self
+        self.moneyLabel.delegate = self
+        settingButton()
+    }
     
     @IBAction func registrationButton(_ sender: UIButton) {
         
@@ -57,8 +65,8 @@ class RegistrationViewController: UIViewController {
             return
         }
         
-        let newUser = User(name: nameLabel.text ?? "",
-                           password: passwordLabel.text ?? "",
+        let newUser = User(name: nameLabel.text!,
+                           password: passwordLabel.text!,
                            balance: Int(moneyLabel.text ?? "0") ?? 0)
         users.append(newUser)
         print(users.count)
@@ -68,12 +76,25 @@ class RegistrationViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameLabel.resignFirstResponder()
+        passwordLabel.resignFirstResponder()
+        moneyLabel.resignFirstResponder()
+        return true
+    }
+    
     func alert(title: String, msg: String) {
         UIAlertController.alert(title: title,
                                 msg: msg,
                                 target: self)
     }
 }
+
+
 
 
 

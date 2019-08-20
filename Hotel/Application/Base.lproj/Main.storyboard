@@ -298,38 +298,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFM-7F-BX4">
-                                <rect key="frame" x="16" y="104" width="288" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqV-YZ-6Se">
-                                <rect key="frame" x="16" y="142" width="288" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8za-eJ-NTl">
-                                <rect key="frame" x="16" y="180" width="110.5" height="24"/>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="18"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сlient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXd-0I-l14">
-                                <rect key="frame" x="16" y="72" width="48.5" height="24"/>
+                                <rect key="frame" x="16" y="80" width="110.5" height="24"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of departure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTk-YD-ZaR">
-                                <rect key="frame" x="16" y="324" width="154" height="24"/>
+                                <rect key="frame" x="16" y="224" width="154" height="24"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-cG-V5L">
-                                <rect key="frame" x="0.0" y="212" width="320" height="104"/>
+                                <rect key="frame" x="0.0" y="112" width="320" height="104"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2Hv-cG-V5L" secondAttribute="height" multiplier="40:13" id="fuf-kX-Pjg"/>
                                 </constraints>
@@ -341,17 +323,14 @@
                                 </connections>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPQ-sL-s8d">
-                                <rect key="frame" x="16" y="499" width="288" height="30"/>
+                                <rect key="frame" x="16" y="399" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RPQ-sL-s8d" secondAttribute="height" multiplier="48:5" id="UAP-PH-31h"/>
                                 </constraints>
                                 <state key="normal" title="Buy"/>
-                                <connections>
-                                    <action selector="bayButton:" destination="ApW-ZF-7M7" eventType="touchUpInside" id="QLK-R0-ofU"/>
-                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1xA-yZ-Fkj">
-                                <rect key="frame" x="0.0" y="356" width="320" height="118"/>
+                                <rect key="frame" x="0.0" y="256" width="320" height="118"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1xA-yZ-Fkj" secondAttribute="height" multiplier="160:59" id="TWh-68-4RW"/>
                                 </constraints>
@@ -367,35 +346,25 @@
                         <constraints>
                             <constraint firstItem="1xA-yZ-Fkj" firstAttribute="top" secondItem="mTk-YD-ZaR" secondAttribute="bottom" constant="8" id="62z-30-q6R"/>
                             <constraint firstItem="2Hv-cG-V5L" firstAttribute="top" secondItem="8za-eJ-NTl" secondAttribute="bottom" constant="8" id="A4w-wf-UnP"/>
-                            <constraint firstItem="IO4-lP-bml" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QXd-0I-l14" secondAttribute="trailing" priority="750" constant="100" id="F4h-lb-rbD"/>
                             <constraint firstItem="RPQ-sL-s8d" firstAttribute="top" secondItem="1xA-yZ-Fkj" secondAttribute="bottom" constant="25" id="OFN-Cr-TOR"/>
-                            <constraint firstItem="QXd-0I-l14" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" constant="16" id="Scu-43-NGh"/>
-                            <constraint firstItem="QXd-0I-l14" firstAttribute="top" secondItem="IO4-lP-bml" secondAttribute="top" constant="8" id="Slz-Dn-uLq"/>
                             <constraint firstItem="IO4-lP-bml" firstAttribute="trailing" secondItem="RPQ-sL-s8d" secondAttribute="trailing" constant="16" id="UcZ-pD-HsX"/>
-                            <constraint firstItem="bqV-YZ-6Se" firstAttribute="top" secondItem="KFM-7F-BX4" secondAttribute="bottom" constant="8" id="UuC-iw-YiE"/>
+                            <constraint firstItem="8za-eJ-NTl" firstAttribute="top" secondItem="IO4-lP-bml" secondAttribute="top" constant="16" id="Viv-iP-AwA"/>
                             <constraint firstItem="2Hv-cG-V5L" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" id="ZrV-BF-dCU"/>
                             <constraint firstItem="1xA-yZ-Fkj" firstAttribute="trailing" secondItem="IO4-lP-bml" secondAttribute="trailing" id="c1U-kH-JRO"/>
                             <constraint firstItem="IO4-lP-bml" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8za-eJ-NTl" secondAttribute="trailing" priority="750" constant="100" id="dGN-eV-h0e"/>
                             <constraint firstItem="1xA-yZ-Fkj" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" id="eJS-pB-KP9"/>
-                            <constraint firstItem="KFM-7F-BX4" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" constant="16" id="f8k-ms-RTb"/>
-                            <constraint firstItem="bqV-YZ-6Se" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" constant="16" id="fko-Aq-xz9"/>
                             <constraint firstItem="2Hv-cG-V5L" firstAttribute="trailing" secondItem="IO4-lP-bml" secondAttribute="trailing" id="gbV-B1-gKT"/>
                             <constraint firstItem="8za-eJ-NTl" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" constant="16" id="i7e-qg-xDu"/>
-                            <constraint firstItem="IO4-lP-bml" firstAttribute="trailing" secondItem="KFM-7F-BX4" secondAttribute="trailing" constant="16" id="iSf-y1-qen"/>
-                            <constraint firstItem="KFM-7F-BX4" firstAttribute="top" secondItem="QXd-0I-l14" secondAttribute="bottom" constant="8" id="nNN-3C-Bij"/>
-                            <constraint firstItem="8za-eJ-NTl" firstAttribute="top" secondItem="bqV-YZ-6Se" secondAttribute="bottom" constant="8" id="ouS-OQ-aQD"/>
                             <constraint firstItem="RPQ-sL-s8d" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" constant="16" id="q6e-iI-wBz"/>
                             <constraint firstItem="IO4-lP-bml" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mTk-YD-ZaR" secondAttribute="trailing" priority="750" constant="100" id="qaC-k8-5oO"/>
                             <constraint firstItem="mTk-YD-ZaR" firstAttribute="leading" secondItem="IO4-lP-bml" secondAttribute="leading" constant="16" id="t8K-IN-ZFF"/>
                             <constraint firstItem="mTk-YD-ZaR" firstAttribute="top" secondItem="2Hv-cG-V5L" secondAttribute="bottom" constant="8" id="vbn-1o-RvH"/>
-                            <constraint firstItem="IO4-lP-bml" firstAttribute="trailing" secondItem="bqV-YZ-6Se" secondAttribute="trailing" constant="16" id="zY0-D5-43c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IO4-lP-bml"/>
                     </view>
                     <navigationItem key="navigationItem" id="qqW-oR-WgZ"/>
                     <connections>
-                        <outlet property="clientNameTextField" destination="KFM-7F-BX4" id="sMp-av-o7n"/>
-                        <outlet property="clientSurNameTextField" destination="bqV-YZ-6Se" id="0lu-p2-aDu"/>
+                        <outlet property="bayButtonOutlet" destination="RPQ-sL-s8d" id="uZo-JV-i08"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prR-86-5Wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,7 +392,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4R6-YH-1Q0">
                                 <rect key="frame" x="40" y="331.5" width="240" height="30"/>
@@ -435,11 +404,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2I-9M-lTz">
-                                <rect key="frame" x="40" y="381.5" width="240" height="44"/>
+                                <rect key="frame" x="53.5" y="381.5" width="213" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="P2I-9M-lTz" secondAttribute="height" multiplier="60:11" id="N1k-nY-gKL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="enterButton:" destination="eOC-10-uvf" eventType="touchUpInside" id="JXb-pi-CMG"/>
@@ -580,16 +549,16 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-9K-mLZ">
-                                <rect key="frame" x="52" y="425" width="218" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-9K-mLZ">
+                                <rect key="frame" x="51.5" y="424.5" width="217" height="35"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="registrationButton:" destination="7FO-gm-IJ8" eventType="touchUpInside" id="FHR-0I-WHB"/>
                                 </connections>
@@ -602,7 +571,10 @@
                             <constraint firstItem="tXU-hH-qef" firstAttribute="centerX" secondItem="usM-rb-1ed" secondAttribute="centerX" id="Erw-Kz-xPg"/>
                             <constraint firstItem="tXU-hH-qef" firstAttribute="top" secondItem="lll-LK-2Rj" secondAttribute="bottom" constant="19" id="PbI-C7-fZE"/>
                             <constraint firstItem="CfM-x8-EHA" firstAttribute="leading" secondItem="RGl-bj-S6n" secondAttribute="leading" id="Ydb-O1-REU"/>
+                            <constraint firstItem="F33-9K-mLZ" firstAttribute="centerX" secondItem="usM-rb-1ed" secondAttribute="centerX" id="cM6-6z-4wj"/>
                             <constraint firstItem="CfM-x8-EHA" firstAttribute="top" secondItem="RGl-bj-S6n" secondAttribute="top" constant="30" id="jmA-YF-7gz"/>
+                            <constraint firstItem="F33-9K-mLZ" firstAttribute="top" secondItem="tXU-hH-qef" secondAttribute="bottom" constant="16" id="yOr-Yx-4eg"/>
+                            <constraint firstItem="F33-9K-mLZ" firstAttribute="width" secondItem="tXU-hH-qef" secondAttribute="width" id="yXd-dw-Dtg"/>
                             <constraint firstItem="lll-LK-2Rj" firstAttribute="top" secondItem="CfM-x8-EHA" secondAttribute="bottom" constant="24" id="zTE-mA-O9G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RGl-bj-S6n"/>
@@ -611,6 +583,7 @@
                         <outlet property="moneyLabel" destination="G0B-T6-7cJ" id="xXY-2q-DI8"/>
                         <outlet property="nameLabel" destination="vzb-4W-fDZ" id="fHv-v2-Zth"/>
                         <outlet property="passwordLabel" destination="Ieg-lU-3mp" id="off-jp-HDo"/>
+                        <outlet property="registrationButtonOutlet" destination="F33-9K-mLZ" id="fPH-qk-hCS"/>
                         <segue destination="uQ6-9l-TuT" kind="show" identifier="startScreen" id="Ij3-RJ-Yy4"/>
                     </connections>
                 </viewController>

@@ -16,7 +16,7 @@ class ListHotelsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Out", style: .done, target: self, action: #selector(outUser))
-
+        
         self.title = "Hotels"
         self.tableView.delegate = self
         self.tableView.dataSource = self

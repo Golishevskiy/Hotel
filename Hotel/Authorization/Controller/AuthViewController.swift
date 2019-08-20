@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AuthViewController: UIViewController {
+class AuthViewController: UIViewController, UITextFieldDelegate {
     
     var users = [User]()
     
@@ -19,6 +19,10 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.passwordTextField.delegate = self
+        self.loginTextField.delegate = self
+        
         //fake users
         let petroUser = User(name: "petro", password: "1", balance: 200)
         let ko = User(name: "ko", password: "10", balance: 1000)
@@ -47,6 +51,16 @@ class AuthViewController: UIViewController {
                 registrationVC.users = users
             }
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        passwordTextField.resignFirstResponder()
+        loginTextField.resignFirstResponder()
+        return true
     }
 }
 
